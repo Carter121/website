@@ -1,0 +1,7 @@
+
+RewriteEngine on
+RewriteRule ^redirecting-page/$ https://www.nationalgeographic.com/ [R=301]
+RewriteCond %{HTTP_HOST} ^natonalgeogrphic\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.natonalgeogrphic\.com$
+RewriteRule ^/?$ "https\:\/\/www\.nationalgeographic\.com\/" [R=301,L]
+
